@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: #00aaff 4px solid;
+}
+
+header .logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.treino-hoje {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.treino-hoje h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.treino-hoje-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto; /* Centraliza o card */
+    
+    /* Alterações solicitadas */
+    width: 270px; /* Largura fixa para manter a proporção */
+    height: 480px; /* Altura fixa para manter a proporção */
+    aspect-ratio: 9 / 16; /* Proporção retangular 9:16 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.treino-hoje-card h3 {
+    margin-top: 0;
+    color: #00aaff;
+}
+
+.treino-hoje-card p {
+    line-height: 1.6;
+}
+
+.btn-ver-semana {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 25px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-semana:hover {
+    background-color: #0088cc;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

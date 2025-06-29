@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+    border-bottom: #00aaff 4px solid;
+}
+
+header .back-link {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.treinos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+    justify-content: center; /* Centraliza os cards no container */
+    gap: 2rem; /* Espaçamento entre os cards */
+}
+
+.treino-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    
+    /* Alteração para deixar os cards maiores */
+    flex-basis: 320px; /* Define uma largura base maior para os cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.treino-card:hover {
+    transform: translateY(-5px);
+}
+
+.treino-card h3 {
+    margin-top: 0;
+    color: #00aaff;
+}
+
+.btn-ver-treino {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-treino:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: 2rem; /* Adiciona espaço antes do rodapé */
+}
