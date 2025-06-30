@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Goulart Personal</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header><h1>Área do Aluno</h1></header>
+  <main class="login-container">
+    <form id="login-form">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+      <p id="error-msg" class="error-msg"></p>
+    </form>
+  </main>
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      // Usuário e senha fictícios
+      if (email === "aluno@goulart.com" && password === "123456") {
+        window.location.href = "painel.html";
+      } else {
+        document.getElementById("error-msg").textContent = "Email ou senha incorretos.";
+      }
+    });
+  </script>
+</body>
+</html>
